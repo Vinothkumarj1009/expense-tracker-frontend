@@ -1,0 +1,38 @@
+@use '@angular/material' as mat;
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Inter', 'Roboto', sans-serif;
+  background: #0f1117;
+  color: #e2e8f0;
+  -webkit-font-smoothing: antialiased;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Material dark theme overrides */
+.mat-mdc-form-field {
+  --mdc-filled-text-field-container-color: transparent;
+  --mdc-outlined-text-field-label-text-color: #64748b;
+  --mdc-outlined-text-field-input-text-color: #e2e8f0;
+  --mdc-outlined-text-field-outline-color: #1e2235;
+  --mdc-outlined-text-field-focus-outline-color: #6366f1;
+  --mdc-outlined-text-field-hover-outline-color: #ffffff;
+}
+
+.mat-mdc-progress-spinner circle {
+  stroke: #fff;
+}
+
+a {
+  color: #818cf8;
+  text-decoration: none;
+  &:hover { text-decoration: underline; }
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #0f1117; }
+::-webkit-scrollbar-thumb { background: #1e2235; border-radius: 3px; }
